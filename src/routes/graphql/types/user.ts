@@ -12,6 +12,8 @@ import { ProfileType } from './profile.js';
 import { ObjectIdType } from './objectId.js';
 import { PostType } from './post.js';
 
+export type UserDtoType = { name: string; balance: number };
+
 export const UserType: GraphQLObjectType<{ id: string }, ContextType> =
   new GraphQLObjectType({
     name: 'User',

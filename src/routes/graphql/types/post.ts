@@ -6,6 +6,8 @@ import {
 } from 'graphql';
 import { UUIDType } from './uuid.js';
 
+export type PostDtotype = { title: string; content: string; authorId: string };
+
 export const PostType = new GraphQLObjectType({
   name: 'Post',
   fields: () => ({

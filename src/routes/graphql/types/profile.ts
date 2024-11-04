@@ -11,6 +11,13 @@ import { ContextType } from '../context.js';
 import { MemberType, MemberTypeId } from './member.js';
 import { MemberTypeId as MemberTypeIdType } from '../../member-types/schemas.js';
 
+export type ProfileDtoType = {
+  isMale: boolean;
+  yearOfBirth: number;
+  userId: string;
+  memberTypeId: string;
+};
+
 export const ProfileType = new GraphQLObjectType({
   name: 'Profile',
   fields: () => ({
